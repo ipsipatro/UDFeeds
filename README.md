@@ -12,7 +12,7 @@ To run the app:
 Please download the repo from https://github.com/ipsipatro/UDFeeds link  and unzip it.
 Inside the main project folder there is a UDFeeds.xcworkspace file. Please click that file to open the app on Xcode. 
 Select a device/simulator to run. 
-Run all the UI and Unit test cases tests by choosing Product > Test. Click the Test Navigator icon to view the status and results of the tests.
+Run all the UI and Unit test cases tests by choosing Product > Test. Click the Test Navigator icon to view the status and results of the tests. Before running the tests please make sure keyboard appears for simultor for both textfield and textview. Otherwise UI test case may fail as unable to enter text.
 
 ## Technical Information
 The app is designed in MVP pattern. All features have a view controller, presenter and interactor.
