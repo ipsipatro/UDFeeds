@@ -13,6 +13,7 @@ protocol GetFeedsView {
     func updateFeeds(feeds: [Feed])
     func toggleErrorLayout(showFlag: Bool)
     func toggleActivityIndicator(show: Bool)
+    func toggleRetryButton(show: Bool)
 }
 
 class GetFeedsPresenter {
@@ -47,11 +48,14 @@ class GetFeedsPresenter {
         let feeds = Array(self.realm.objects(Feed.self))
         updateFeeds(feeds: feeds)
         view?.toggleActivityIndicator(show: feeds.count == 0)
+        view?.toggleRetryButton(show: false)
         interactor?.getFeeds().done({[weak self] (feeds) in
             guard let weakSelf = self else { return }
             weakSelf.view?.updateFeeds(feeds: Array(weakSelf.realm.objects(Feed.self)))
-        }).catch {(error) in
+        }).catch {[weak self] (error) in
+            guard let weakSelf = self else { return }
             print(error)
+            weakSelf.view?.toggleRetryButton(show: true)
         }.finally { [weak self] in
             guard let weakSelf = self else { return }
             weakSelf.view?.toggleActivityIndicator(show: false)

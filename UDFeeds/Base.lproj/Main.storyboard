@@ -117,6 +117,7 @@
                         <outlet property="activityIndicator" destination="Iva-96-xvN" id="Hdo-Rh-Okl"/>
                         <outlet property="addContentButton" destination="sPV-XT-kV4" id="e1E-zq-Fdw"/>
                         <outlet property="errorView" destination="TI2-ob-ddI" id="A9S-fc-ZGL"/>
+                        <outlet property="retryButton" destination="TmH-va-cW2" id="Qv6-M1-l7h"/>
                         <outlet property="tableView" destination="sWV-UC-LAH" id="zdn-8k-WLI"/>
                     </connections>
                 </viewController>
@@ -205,7 +206,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XuG-4v-ZmB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Add Feed" id="8EB-7L-6TW"/>
+                    <navigationItem key="navigationItem" title="Add Feed" leftItemsSupplementBackButton="YES" id="8EB-7L-6TW"/>
                     <connections>
                         <outlet property="activityIndicator" destination="iiG-P2-sRW" id="a02-yH-59A"/>
                         <outlet property="descriptionTextView" destination="f85-uG-fo9" id="X1l-c5-sWV"/>

@@ -27,7 +27,7 @@ class AddFeedController: UIViewController {
     }
     
     func setUp() {
-        self.navigationController?.navigationBar.topItem?.title = ""
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
         addShadowEffect(view: titleTextField)
         addShadowEffect(view: descriptionTextView)
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))

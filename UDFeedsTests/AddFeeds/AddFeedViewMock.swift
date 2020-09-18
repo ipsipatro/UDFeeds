@@ -13,8 +13,7 @@ class AddFeedViewMock: AddFeedView {
     var fieldsResetFlag = false
     var isUploadButtonEnabled = false
     
-    func showAlert(title: String, message: String) {
-    }
+    func showAlert(title: String, message: String) {}
     
     func resetFields() {
         fieldsResetFlag = true
@@ -24,6 +23,5 @@ class AddFeedViewMock: AddFeedView {
         isUploadButtonEnabled = enableFlag
     }
     
-    func toggleLoadingIndicator(show: Bool) {
-    }
+    func toggleLoadingIndicator(show: Bool) {}
 }

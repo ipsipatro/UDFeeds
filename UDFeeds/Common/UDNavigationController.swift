@@ -11,7 +11,10 @@ import UIKit
 class UDNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setUp()
+    }
+    
+    func setUp() {
         let gradient = CAGradientLayer()
         var bounds = navigationBar.bounds
         let window = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
@@ -23,7 +26,7 @@ class UDNavigationController: UINavigationController {
             navigationBar.setBackgroundImage(image, for: UIBarMetrics.default)
         }
     }
-
+    
     func getImageFrom(gradientLayer:CAGradientLayer) -> UIImage? {
         var gradientImage:UIImage?
         UIGraphicsBeginImageContext(gradientLayer.frame.size)

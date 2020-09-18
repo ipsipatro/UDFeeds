@@ -17,17 +17,11 @@ class GetFeedsViewMock: GetFeedsView {
         updateFeedsFlag = true
     }
     
-    func showAlert(title: String, message: String) {
-        
-    }
+    func showAlert(title: String, message: String) {}
     
-    func toggleErrorLayout(showFlag: Bool) {
-        
-    }
+    func toggleErrorLayout(showFlag: Bool) {}
     
-    func toggleActivityIndicator(show: Bool) {
-        
-    }
+    func toggleActivityIndicator(show: Bool) {}
     
-    
+    func toggleRetryButton(show: Bool) {}
 }

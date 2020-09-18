@@ -196,9 +196,9 @@
 			isa = PBXGroup;
 			children = (
 				17EC4E7E250CDA06006604E8 /* GetFeedsViewController.swift */,
+				1793FB3D2510DB6E000CF96D /* GetFeedsPresenter.swift */,
 				17EC4E9F250EA4EF006604E8 /* FeedTableViewCell.swift */,
 				17EC4EA1250EA521006604E8 /* FeedTableViewCell.xib */,
-				1793FB3D2510DB6E000CF96D /* GetFeedsPresenter.swift */,
 				1793FB3F2510DCB3000CF96D /* GetFeedInteractor.swift */,
 			);
 			path = GetFeeds;

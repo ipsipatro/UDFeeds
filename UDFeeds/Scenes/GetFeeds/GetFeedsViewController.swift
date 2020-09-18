@@ -14,6 +14,7 @@ class GetFeedsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var errorView: UIView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var retryButton: BlueButton!
     
     var presenter: GetFeedsPresenter?
     var feeds: [Feed]?
@@ -69,6 +70,10 @@ extension GetFeedsViewController: GetFeedsView {
         }else {
             activityIndicator.stopAnimating()
         }
+    }
+    
+    func toggleRetryButton(show: Bool) {
+        retryButton.isHidden = !show
     }
 }
 
