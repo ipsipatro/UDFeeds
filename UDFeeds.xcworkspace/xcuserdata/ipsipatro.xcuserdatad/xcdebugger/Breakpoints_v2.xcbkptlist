@@ -474,8 +474,8 @@
             filePath = "UDFeeds/Scenes/GetFeeds/GetFeedsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "getFeeds()"
             landmarkType = "7">
          </BreakpointContent>
@@ -538,25 +538,9 @@
             filePath = "UDFeeds/Scenes/GetFeeds/GetFeedsPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "getFeeds()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7E42271C-269A-45CB-B71E-73640ACC01E4"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "UDFeeds/Scenes/GetFeeds/GetFeedsPresenter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "retryButtonTapped()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

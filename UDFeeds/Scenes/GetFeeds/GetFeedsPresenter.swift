@@ -42,9 +42,7 @@ class GetFeedsPresenter {
     func updateFeeds(feeds: [Feed]) {
         view?.updateFeeds(feeds: feeds)
     }
-    
-    
-    // MARK: Private function
+        
     func getFeeds() {
         let feeds = Array(self.realm.objects(Feed.self))
         updateFeeds(feeds: feeds)
