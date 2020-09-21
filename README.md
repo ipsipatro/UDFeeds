@@ -11,6 +11,7 @@ After uploading a feed app shows a success message. If you want to add another f
 To run the app:
 Please download the repo from https://github.com/ipsipatro/UDFeeds link  and unzip it.
 Inside the main project folder there is a UDFeeds.xcworkspace file. Please click that file to open the app on Xcode. 
+This app has been built with deployment target 13.7. 
 Select a device/simulator to run. 
 Run all the UI and Unit test cases tests by choosing Product > Test. Click the Test Navigator icon to view the status and results of the tests. Before running the tests please make sure the keyboard appears for the simulator for both textfield and textview. Otherwise the UI test cases may fail as unable to enter text.
 
